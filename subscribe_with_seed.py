@@ -5,10 +5,10 @@ import os
 
 from helper import create_app_jwt
 
-dapp_access_token = "SAAGNJOZTRPYYXG2NJX3ZNGXYUSDYX2BWO447W3SHG6XQ7U66RWHQ3JUXM"
+access_token = "SAAGNJOZTRPYYXG2NJX3ZNGXYUSDYX2BWO447W3SHG6XQ7U66RWHQ3JUXM"
 
 async def main():
-    jwt = create_app_jwt(dapp_access_token)
+    jwt = create_app_jwt(access_token)
 
     # Write the JWT to a temporary file with correct format
     with tempfile.NamedTemporaryFile(mode='w+t', delete=False) as temp:
