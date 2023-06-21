@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the Python SDK for the Data Availability Layer by SyntropyNet! This SDK allows seamless integration with our Data Availability Layer solution, enabling you to leverage real-time data streams in your Python applications. With the Python SDK, you can unlock the power of the Data Availability Layer and harness real-time insights for your data-driven projects.
 
-[pubsub-python ](https://github.com/SyntropyNet/pubsub-python)is a Python example illustrating the use of the Syntropy DataMesh project, which facilitates subscription to existing data streams or publishing new ones. This example employs the NATS messaging system and offers a simpler starting point for integrating Python applications with the Syntropy DataMesh platform.
+[pubsub-python ](https://github.com/SyntropyNet/pubsub-python)is a Python example illustrating the use of the Syntropy Data Availability Layer project, which facilitates subscription to existing data streams or publishing new ones. This example employs the NATS messaging system and offers a simpler starting point for integrating Python applications with the Syntropy Data Availability Layer platform.
 
 # Installation
 
@@ -14,20 +14,20 @@ pip install syntropynet-pubsub
 
 # Getting Started
 
-Before you begin using the Python SDK, make sure you have the necessary credentials and access tokens from the SyntropyNet platform. These credentials will allow you to connect to the Data Availability Layer and subscribe to or publish data streams.
+Before you begin using the Python SDK, make sure you have the necessary credentials and access tokens from the Syntropy Developer Portalplatform. These credentials will allow you to connect to the Data Availability Layer and subscribe to or publish data streams.
 
 ## Usage
 
 1. Import the SDK:
 
 ```python
-from syntropynet_pubsub import DataMeshClient
+from syntropynet_pubsub import Data Availability LayerClient
 ```
 
 2. Initialize the client:
 
 ```python
-client = DataMeshClient(access_token="your-access-token", private_key="your-private-key")
+client = Data Availability LayerClient(access_token="your-access-token", private_key="your-private-key")
 ```
 
 3. Subscribe to a Data Stream:
