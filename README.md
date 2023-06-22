@@ -1,6 +1,6 @@
 # PubSub Python
 
-Welcome to the documentation for the Python SDK for the Data Availability Layer by SyntropyNet! This SDK allows seamless integration with our Data Availability Layer solution, enabling you to leverage real-time data streams in your Python applications. With the Python SDK, you can unlock the power of the Data Availability Layer and harness real-time insights for your data-driven projects.
+Welcome to the documentation for the Python SDK for the Data Availability Layer by Syntropy! This SDK allows seamless integration with our Data Availability Layer solution, enabling you to leverage real-time data streams in your Python applications. With the Python SDK, you can unlock the power of the Data Availability Layer and harness real-time insights for your data-driven projects.
 
 [pubsub-python ](https://github.com/SyntropyNet/pubsub-python)is a Python example illustrating the use of the Syntropy Data Availability Layer project, which facilitates subscription to existing data streams or publishing new ones. This example employs the NATS messaging system and offers a simpler starting point for integrating Python applications with the Syntropy Data Availability Layer platform.
 
