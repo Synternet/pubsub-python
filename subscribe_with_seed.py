@@ -5,7 +5,7 @@ import os
 
 from helper import create_app_jwt
 
-access_token = "SAAGNJOZTRPYYXG2NJX3ZNGXYUSDYX2BWO447W3SHG6XQ7U66RWHQ3JUXM"
+access_token = "EXAMPLE_ACCESS_TOKEN"
 
 async def main():
     jwt = create_app_jwt(access_token)
