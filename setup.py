@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="synternet-pubsub",
     version="0.1",
+    py_modules=["helper"],
     packages=find_packages(),
     install_requires=[
         "nats.py==2.9.0",
