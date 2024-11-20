@@ -9,7 +9,7 @@ Welcome to the documentation for the Python SDK for the Data Layer by Syntropy! 
 To install the Python SDK for Data Layer, you can use pip, the Python package manager. Here's an example of how to install it:
 
 ```shell
-pip install syntropynet-pubsub
+pip install git+https://github.com/Synternet/pubsub-python.git
 ```
 
 # Getting Started
