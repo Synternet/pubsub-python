@@ -23,7 +23,7 @@ async def main():
         print("Received a message on '{subject}: {data}".format(
             subject=subject, data=data))
 
-    await nc.subscribe("synternet.xample.subject", cb=message_handler)
+    await nc.subscribe("synternet.example.subject", cb=message_handler)
 
     # run infinitely
     while True:

@@ -12,7 +12,7 @@ async def main():
         data = msg.data.decode()
         print("Received a message on '{subject}: {data}".format(
             subject=subject, data=data))
-        await pub_nc.publish("my_republisher.example.subject", msg.data)
+        await pub_nc.publish("republisher.example.subject", msg.data)
 
     await sub_nc.subscribe("synternet.example.subject", cb=message_handler)
 

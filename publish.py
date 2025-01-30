@@ -5,7 +5,7 @@ async def main():
     nc = await nats.connect("nats://127.0.0.1", user_credentials="nats.creds")
 
     for i in range(1000):
-        await nc.publish("my_publisher.example.subject", (str(i) + "x ").encode('utf-8'))
+        await nc.publish("publisher.example.subject", (str(i) + "x ").encode('utf-8'))
         await asyncio.sleep(1)
 
     # Terminate connection to NATS.
