@@ -1,26 +1,26 @@
 # PubSub Python
 
-Welcome to the documentation for the Python SDK for the Data Layer by Syntropy! This SDK allows seamless integration with our Data Layer solution, enabling you to leverage real-time data streams in your Python applications. With the Python SDK, you can unlock the power of the Data Layer and harness real-time insights for your data-driven projects.
+Welcome to the documentation for the Python SDK for the Data Layer by Synternet! This SDK allows seamless integration with our Data Layer solution, enabling you to leverage real-time data streams in your Python applications. With the Python SDK, you can unlock the power of the Data Layer and harness real-time insights for your data-driven projects.
 
-[pubsub-python](https://github.com/SyntropyNet/pubsub-python) is a Python example illustrating the use of the Syntropy Data Layer project, which facilitates subscription to existing data streams or publishing new ones. This example employs the NATS messaging system and offers a simpler starting point for integrating Python applications with the Syntropy Data Layer platform.
+[pubsub-python](https://github.com/Synternet/pubsub-python) is a Python example illustrating the use of the Synternet Data Layer project, which facilitates subscription to existing data streams or publishing new ones. This example employs the NATS messaging system and offers a simpler starting point for integrating Python applications with the Synternet Data Layer platform.
 
 # Installation
 
 To install the Python SDK for Data Layer, you can use pip, the Python package manager. Here's an example of how to install it:
 
 ```shell
-pip install syntropynet-pubsub
+pip install git+https://github.com/Synternet/pubsub-python.git
 ```
 
 # Getting Started
 
-Before you begin using the Python SDK, make sure you have the necessary credentials and access tokens from the Syntropy [Developer Portal](https://developer-portal.syntropynet.com/) platform. These credentials will allow you to connect to the Data Layer and subscribe to or publish data streams.
+Before you begin using the Python SDK, make sure you have the necessary credentials and access tokens from the Synternet [Developer Portal](https://portal.synternet.com/) platform. These credentials will allow you to connect to the Data Layer and subscribe to or publish data streams.
 
 ## Examples
 
-For detailed usage examples, please refer to the [examples directory](https://github.com/SyntropyNet/pubsub-python/examples) in the repository. These examples cover various scenarios and demonstrate how to utilize the SDK's features effectively.
+For detailed usage examples, please refer to the [examples directory](https://github.com/Synternet/pubsub-python/examples) in the repository. These examples cover various scenarios and demonstrate how to utilize the SDK's features effectively.
 
-The preferred authentication method is using an access token from the [developer portal](https://developer-portal.syntropynet.com/).
+The preferred authentication method is using an access token from the [developer portal](https://portal.synternet.com/).
 
 ```Text Python
 import asyncio
@@ -30,10 +30,10 @@ import os
 
 from helper import create_app_jwt
 
-access_token = "EXAMPLE_ACCESS_TOKEN"
+ACCESS_TOKEN = "EXAMPLE_ACCESS_TOKEN"
 
 async def main():
-    jwt = create_app_jwt(access_token)
+    jwt = create_app_jwt(ACCESS_TOKEN)
 
     # Write the JWT to a temporary file with correct format
     with tempfile.NamedTemporaryFile(mode='w+t', delete=False) as temp:
@@ -47,7 +47,6 @@ async def main():
         data = msg.data.decode()
         print("Received a message on '{subject}: {data}".format(
             subject=subject, data=data))
-        # await nc.publish("syntropy.test.subject", msg.data)
 
     await nc.subscribe("syntropy.bitcoin.tx", cb=message_handler)
 
@@ -66,7 +65,7 @@ if __name__ == '__main__':
 ```
 
 # Contributing
-We welcome contributions from the community! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/SyntropyNet/pubsub-python). We appreciate your feedback and collaboration in making this SDK even better. 
+We welcome contributions from the community! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/Synternet/pubsub-python). We appreciate your feedback and collaboration in making this SDK even better. 
 
 ## Contribution Guidelines
 
