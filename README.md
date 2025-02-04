@@ -20,7 +20,7 @@ More information available in [https://docs.synternet.com/docs](Synternet docume
 
 ## Examples
 
-For detailed usage examples, please refer to the [examples directory](https://github.com/Synternet/pubsub-python/examples) in the repository. These examples cover various scenarios and demonstrate how to utilize the SDK's features effectively.
+For detailed usage examples, please refer to the [examples directory](https://github.com/Synternet/pubsub-python/tree/main/examples) in the repository. These examples cover various scenarios and demonstrate how to utilize the SDK's features effectively.
 
 The preferred authentication method is using an access token from the [developer portal](https://portal.synternet.com/).
 
