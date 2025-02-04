@@ -1,4 +1,4 @@
-# Code of Conduct - Syntropy PubSub Python
+# Code of Conduct - Synternet PubSub Python
 
 ## Our Pledge
 

@@ -1,14 +1,14 @@
-import asyncio
-import nats
-import tempfile
 import os
+import asyncio
+import tempfile
+import nats
 
 from helper import create_app_jwt
 
-access_token = "EXAMPLE_ACCESS_TOKEN"
+ACCESS_TOKEN = "EXAMPLE_ACCESS_TOKEN"
 
 async def main():
-    jwt = create_app_jwt(access_token)
+    jwt = create_app_jwt(ACCESS_TOKEN)
 
     # Write the JWT to a temporary file with correct format
     with tempfile.NamedTemporaryFile(mode='w+t', delete=False) as temp:
@@ -22,9 +22,8 @@ async def main():
         data = msg.data.decode()
         print("Received a message on '{subject}: {data}".format(
             subject=subject, data=data))
-        # await nc.publish("syntropy.test.subject", msg.data)
 
-    await nc.subscribe("syntropy.bitcoin.tx", cb=message_handler)
+    await nc.subscribe("synternet.example.subject", cb=message_handler)
 
     # run infinitely
     while True:

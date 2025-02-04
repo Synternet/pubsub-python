@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="synternet-pubsub",
-    version="0.1",
+    version="0.2",
     py_modules=["helper"],
     packages=find_packages(),
     install_requires=[
         "nats.py==2.9.0",
-        "nkeys==0.1.0"
+        "nkeys==0.2.1"
     ],
     description="A helper package for Synternet DL",
     author="Synternet",
