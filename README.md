@@ -16,7 +16,7 @@ pip install git+https://github.com/Synternet/pubsub-python.git
 
 Before you begin using the Python SDK, make sure you have the necessary credentials and access tokens from the Synternet [Developer Portal](https://portal.synternet.com/) platform. These credentials will allow you to connect to the Data Layer and subscribe to or publish data streams.
 
-More information available in [https://docs.synternet.com/docs](Synternet documentation).
+More information available in [Synternet documentation](https://docs.synternet.com/docs).
 
 ## Examples
 
